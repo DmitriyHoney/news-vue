@@ -37,29 +37,7 @@
     name: 'App',
     data() {
       return {
-        news: [
-          {
-            Author: "1D5694484A87037",
-            Description: 'Новость',
-            Title: 'bitle',
-            update: "2019-06-25T19:23:20",
-            PublicationImage: "0906b900-ef28-4ff1-819c-3750bf505185.jpg",
-          },
-          {
-            Author: "1D5694484A87037",
-            Description: 'Новость 2',
-            Title: 'witle 2',
-            update: "2019-06-26T19:23:20",
-            PublicationImage: "0906b900-ef28-4ff1-819c-3750bf505185.jpg",
-          },
-          {
-            Author: "1D5694484A87037",
-            Description: 'Новость 3',
-            Title: 'aitle 3',
-            update: "2019-06-28T19:23:20",
-            PublicationImage: "0906b900-ef28-4ff1-819c-3750bf505185.jpg",
-          },
-        ],
+        news: [],
         titleNews: [],
         isColumn: true,
         newsOnPage: 3, //кол-во новостей показанных за раз
@@ -69,7 +47,7 @@
     },
     initialStateForLocalStorage: {
       isColumn: true,
-      newsOnPage: 3, //кол-во новостей показанных за раз
+      newsOnPage: 3, //кол-во новостей показанных зsа раз
     },
     watch: {
       newsOnPage(val) {
